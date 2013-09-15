@@ -1,0 +1,54 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600&subset=latin,cyrillic);
+
+body {
+	min-height: 100%;
+	font-family: Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
+}
+
+@sidebarWidth: 400px;
+@headerHeight: 80px;
+.main-layout {
+	min-height: 100%;
+	position: relative;
+	padding-left: @sidebarWidth;
+	padding-top: @headerHeight;
+}
+
+.main-layout__sidebar {
+	position: fixed;
+	top: @headerHeight;
+	left: 0;
+	width: @sidebarWidth;
+	height: 100%;
+	background: #f5f5f5;
+}
+.main-layout__body {
+	padding: 40px;
+}
+// .tasks-wrap {
+// 	padding-top: 40px;
+// }
+.header-layout {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	height: @headerHeight;
+	background: #f5f5f5;
+	box-shadow: 2px 2px 8px 0px rgba(1, 1, 1, 0.12);
+	.group;
+}
+.header-layout__filters {
+	float: left;
+}
+.header-layout__login {
+	float: right;
+	width: 250px;
+	padding-top: 24px;
+}
+.tooltip {
+	font-size: 10px;
+	color: #646464;
+}

@@ -1,0 +1,34 @@
+.group {
+	&:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+}
+
+.light-font {
+	font-variant: normal;
+	font-weight: 300;
+}
+.link {
+	font-size: inherit;
+	color: #0061b4;
+	text-decoration: none;
+}
+.link_light {
+	.light-font;
+}
+.link_big {
+	font-size: 18px;
+}
+.link_small {
+	font-size: 12px;
+}
+.link_xsmall {
+	font-size: 10px;
+}
+.link:hover {
+	text-decoration: underline;
+}
